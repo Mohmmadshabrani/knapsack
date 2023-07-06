@@ -1,0 +1,84 @@
+body {
+    background-color: #ffffff;
+    color: #000000;
+    font-family: Arial, sans-serif;
+    text-align: center;
+  }
+  
+  .knapsack {
+    margin: 50px auto;
+
+  }
+  p{
+    color: #000000;
+  }
+  table {
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  .buttons {
+    display: inline-block;
+    /* margin: 10px; */
+    padding: 10px;
+    background-color: #666;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .txtBox {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    width: 200px;
+    margin: 10px;
+    background-color: #666;
+  }
+  
+  .populationTable {
+    margin: 50px auto;
+
+  }
+  
+  .BigButton {
+    display: block;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #666;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+  }
+
+  
+  #secondphase {
+    display: none;
+    margin: 50px auto;
+  }
+  
+  #text {
+    margin-top: 50px;
+  }
+  
+  #text span {
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  
+  #showGens, #mutation {
+    height: 200px;
+    overflow-y: scroll;
+    margin-top: 10px;
+    border: 1px solid #000000;
+    padding: 5px;
+  }
+  
+  
+  
+ 

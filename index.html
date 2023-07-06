@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="code.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div id="firstPhase">
+        <div class="knapsack"></div>
+        <button class="buttons" onclick="genKnap() ">generate random knapsack</button>
+        <div>
+            <p> enter the number of population then press the button</p>
+            <INPut class="txtBox" type="text" id="num_population" value="10"> </INPut>
+            <button class="buttons" onclick="initializePopulation()"> done </button>
+        </div>
+
+    <div class="knapsackSample" id="knapsackSample"></div>
+    <button class="buttons" onclick="Showsample()">click to show random sample</button>
+
+    <div id="populationTable" class="populationTable">
+    </div>
+        <button class="buttons" onclick="Showpopulation()">show population</button>
+        <button class="BigButton" onclick="begin()">Start</button>
+        <p id="notice"></p>
+
+</div>
+
+
+<div class="second main phase" id="secondphase" style="display: none;">
+
+    <div class="text" id="text">
+        <span>number of generations:</span> <p id="NOG"></p>
+        <br>
+        <p id="populationsize"></p>
+        <p id="numberofIteams"></p>
+        <span> knapsack limit: </span> <p id="knapsackLimit"></p>
+        <span>total value and weight of the best answer ever: </span><p id="bestEver1"></p>
+        <span> total value of the answer: </span> <p id="knapsackTotalAnswer"></p>
+        <span> total value of weight: </span> <p id="knapsackTotalweight"></p>
+        <span> fitness rate : </span><p id="fitnessrate"></p>
+        <span>populations average fitness rate: </span><p id="populationsaveragefitnessrate"></p>
+        <br>
+        <div id="showGens" style="height: 200px; overflow-y: scroll;">
+          </div>
+
+          
+        <button id="stopBTn" onclick="alter()">STOP</button>
+        <button id="start" onclick="reproduce(); Show = true;">start</button>
+        <button id="again" onclick="reapete()"> again </button>
+    </div>
+</div>
+<p id="lastAnswr"></p>
+<br><br>
+<canvas id="myChart"></canvas>
+<br><br>
+
+</body>
+</html>
+
+
